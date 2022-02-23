@@ -7,9 +7,7 @@
   
 body {
   background-color:darkslategrey;
-  /* background-image: url('https://www.crushpixel.com/big-static18/preview4/rainy-background-rain-water-drops-2908844.jpg'); */
-  /* background-image: url('https://c1.wallpaperflare.com/preview/449/32/891/balance-inspiration-motivation-life.jpg'); */
-  background-image: url('wallpaperflare.com_wallpaper.jpg');
+  background-image: url('wallpaperflare.com_wallpaper.png');
   background-position: bottom 5% right 30%;
   background-size: 100%;
   display: flex;
