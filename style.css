@@ -24,14 +24,27 @@ hr {
   color:rgba( 255, 255, 255, 0.01 )
 }
 
-input {
+#icon {
+  width: 8px;
+}
+
+#city-list {
+  cursor: pointer;
+}
+
+#search-input {
   font-size: 1rem;
   outline: none;
   background-color:rgba( 255, 255, 255, 0.01 );
-  color:rgba( 255, 255, 255, 0.3 );
+  /* color:rgba( 255, 255, 255, 0.3 ); */
+  color: white;
   border: none;
   padding: 0 0 5% 0;
   width: 74%;
+}
+
+#search-button {
+  width: 25%;
 }
 
 input::placeholder {

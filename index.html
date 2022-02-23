@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/phosphor-icons"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
@@ -18,27 +19,30 @@
         <h2 id="name"></h2>
         <div id="time"></div>
       </div>
-      <div id="weather"></div>
+      <div id="icon-weather">
+        <div id="icon"></div>
+        <div id="weather"></div>
+      </div>
     </div>
   </div>
   <div id="sidebar">
     <div id="search">
-      <input type="text" placeholder="Another location">
-      <button>Search</button>
+      <input type="text" id="search-input" placeholder="Another location">
+      <input type="button" id="search-button" value="Search"></input>
     </div>
     <hr>
-    <ul>
+    <ul id="city-list">
       <li>
-        <p class="li-left">Seattle</p>
+        <p class="li-left" onclick="importData('Seattle')">Seattle</p>
       </li>
       <li>
-        <p class="li-left">New York</p>
+        <p class="li-left" onclick="importData('New York')">New York</p>
       </li>
       <li>
-        <p class="li-left">Madrid</p>
+        <p class="li-left" onclick="importData('Madrid')">Madrid</p>
       </li>
       <li>
-        <p class="li-left">Singapore</p>
+        <p class="li-left" onclick="importData('Singapore')">Singapore</p>
       </li>
     </ul>
     <hr>
