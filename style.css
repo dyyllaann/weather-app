@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', Helvetica, sans-serif;
+  }
+  
+body {
+  background-color:darkslategrey;
+  /* background-image: url('https://www.crushpixel.com/big-static18/preview4/rainy-background-rain-water-drops-2908844.jpg'); */
+  /* background-image: url('https://c1.wallpaperflare.com/preview/449/32/891/balance-inspiration-motivation-life.jpg'); */
+  background-image: url('wallpaperflare.com_wallpaper.jpg');
+  background-position: bottom 5% right 30%;
+  background-size: 100%;
+  display: flex;
+}
+
+button {
+  width: 25%;
+}
+
+hr {
+  margin: 5% 0;
+  color:rgba( 255, 255, 255, 0.01 )
+}
+
+input {
+  font-size: 1rem;
+  outline: none;
+  background-color:rgba( 255, 255, 255, 0.01 );
+  color:rgba( 255, 255, 255, 0.3 );
+  border: none;
+  padding: 0 0 5% 0;
+  width: 74%;
+}
+
+input::placeholder {
+  color:rgba( 255, 255, 255, 0.3 );
+}
+
+#current, h1 {
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+#details {
+  color: white;
+  padding: 10% 0;
+}
+
+#main {
+  color: white;
+  flex: 2;
+  height: 100%;
+}
+
+#main-content {
+  margin-top: 60%;
+  margin-left: 5%;
+}
+
+#main-content > * {
+  padding: 0 2%;
+  display: inline-block;
+}
+
+#name, h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+#sidebar {
+  flex: 1;
+  padding: 5%;
+  height: 100vh;
+  background: rgba( 20, 20, 20, 0.4 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+}
+
+#sidebar-content {
+  display: flex;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  padding: 4% 0;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  color: white;
+}
+
+.li-left {
+  color:rgba( 255, 255, 255, 0.3 );
+}

@@ -4,10 +4,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Weather App</title>
 </head>
 <body>
+  <div id="main">
+    <div id="main-content">
+      <h1 id="current"></h1>
+      <div id="name-time">
+        <h2 id="name"></h2>
+        <div id="time"></div>
+      </div>
+      <div id="weather"></div>
+    </div>
+  </div>
+  <div id="sidebar">
+    <div id="search">
+      <input type="text" placeholder="Another location">
+      <button>Search</button>
+    </div>
+    <hr>
+    <ul>
+      <li>
+        <p class="li-left">Seattle</p>
+      </li>
+      <li>
+        <p class="li-left">New York</p>
+      </li>
+      <li>
+        <p class="li-left">Madrid</p>
+      </li>
+      <li>
+        <p class="li-left">Singapore</p>
+      </li>
+    </ul>
+    <hr>
+    <div id="details">Weather Details</div>
+    <div id="sidebar-content">
+      <ul>
+        <li>
+          <p class="li-left">Humidity</p><p id="humidity"></p>
+        </li>
+        <li>
+          <p class="li-left">Wind</p><p id="wind"></p>
+        </li>
+        <li>
+          <p class="li-left">Low</p><p id="low"></p>
+        </li>
+        <li>
+          <p class="li-left">High</p><p id="high"></p>
+        </li>
+      </ul>
+    </div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
