@@ -79,7 +79,7 @@ const importData = function (city) {
       data.humidity = `${APIdata.main.humidity}%`;
 
       // Wind
-      data.wind = APIdata.wind.speed;
+      data.wind = `${APIdata.wind.speed}km/h`;
 
       // Low Temperature
       data.low = formatTemp(APIdata.main.temp_min);
