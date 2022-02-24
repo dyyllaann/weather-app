@@ -1,3 +1,43 @@
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+
+  #city-list {
+    display: none;
+  }
+
+  #search {
+    margin: 0;
+    width: 90%;
+    position:fixed;
+    top: -100%;
+  }
+
+  #search-input {
+    margin: 5% 0;
+    width: 100%;
+    padding: 2.5%;
+    border: 2px solid rgba( 0, 0, 0, 0.3 );
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 801px) {
+  body {
+    flex-direction: row;
+  }
+  #search-input {
+    padding: 2.5% 0;
+    border: none;
+    width: 74%;
+  }  
+
+  #sidebar {
+    overflow: scroll;
+  }
+}
+
 *{
     margin:0;
     padding:0;
@@ -6,10 +46,9 @@
   }
   
 body {
-  background-color:darkslategrey;
+  background-color:rgb(44, 54, 54);
   background-image: url('wallpaperflare.com_wallpaper.png');
-  background-position: bottom 5% right 30%;
-  background-size: 100%;
+  background-size: auto 100%;
   display: flex;
 }
 
@@ -34,11 +73,7 @@ hr {
   font-size: 1rem;
   outline: none;
   background-color:rgba( 255, 255, 255, 0.01 );
-  /* color:rgba( 255, 255, 255, 0.3 ); */
   color: white;
-  border: none;
-  padding: 0 0 5% 0;
-  width: 74%;
 }
 
 #search-button {
@@ -60,6 +95,7 @@ input::placeholder {
 }
 
 #main {
+  position: relative;
   color: white;
   flex: 2;
   height: 100%;
