@@ -9,6 +9,7 @@ body {
   background-color:rgb(44, 54, 54);
   background-image: url('wallpaperflare.com_wallpaper.png');
   background-size: auto 100%;
+  height: 100vh;
   display: flex;
 }
 
@@ -62,11 +63,6 @@ input::placeholder {
   color: white;
   flex: 2;
   height: 100%;
-}
-
-#main-content {
-  margin-top: 60%;
-  margin-left: 5%;
 }
 
 #main-content > * {
@@ -125,6 +121,10 @@ li {
     flex-direction: row;
   }
 
+  #main-content {
+    margin-top: 60%;
+  }
+
   #search-input {
     padding: 2.5% 0;
     border: none;
@@ -148,6 +148,7 @@ li {
 
   #main {
     display: flex;
+    justify-content: center;
   }
 
   #main-content {
@@ -179,8 +180,9 @@ li {
     font-size: 2rem;
   }
 
-  #sidebar {
-    height: 10vh;
+  #sidebar > * {
+    align-self: center;
+    width: 90%;
   }
 
   #city-list {
